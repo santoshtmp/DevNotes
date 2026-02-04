@@ -41,6 +41,7 @@ rm -f binlog.* # except binlog.index
 ## To setup Apache
 - brew services list :: To check brew services
 - brew services restart httpd :: To restart httpd apache
+- brew services stop httpd :: To stop httpd apache
 - Listen 8080 in httpd.conf :: To change apache to port 8080 as valet is runnig in 80 
 - URL http://localhost:8080
 - DocumentRoot "/opt/homebrew/var/www"
@@ -63,3 +64,8 @@ DocumentRoot "/opt/homebrew/var/www"
 </IfModule>
 ```
 - Make sure mod_rewrite is loaded in httpd.conf : LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so
+
+================================================================================================================
+## Drupal 
+1. change site/default permission:
+    - chmod 755 sites/default 

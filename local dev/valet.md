@@ -48,12 +48,18 @@ brew services list
 - valet park
 
 ## step3: Create project dir and project inside Sites dir like
-- wordpress
-- drupal
-- moodle
-- santoshmagar
+    - wordpress
+    - drupal
+    - moodle
+    - santoshmagar
 
 To make secure site: valet secure project_name 
+
+To make valet symbolic site:
+- cd path_to_site then ```valet link custom-site-name```
+- This will stay in [/Users/santosh/.config/valet/Sites/custom-site-name].
+
+
 
 
 ## step4: Database
